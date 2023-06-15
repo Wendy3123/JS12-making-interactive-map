@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mapping Activity</title>
+    <link rel = "stylesheet" href = './style.css'> 
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+    integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
+    crossorigin=""/>
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+     integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
+     crossorigin=""></script>
+</head>
+<body>
+    <form method='GET'>
+        <select id="sel" class="input" name='Select'>
+          <option class="choice" value='coffee'> Coffee</option>
+          <option class="choice" value='hotel'> Hotel</option>
+          <option class="choice" value='restaurant'> Restaurant</option>
+          <option class="choice" value='market'> Market</option>
+        </select>
+        <button class='btn' type='Submit'>Submit</button>
+    </form>
+    <div id="map"></div>
+    <script src = './index.js'></script>
+</body>
+</html>
